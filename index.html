@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>atomes.pro</title>
-    <style>
-        body {
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: black;
-        }
-        video {
-            max-width: 100%;
-            max-height: 100%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>atomes.pro</title>
+  <link rel="icon" href="content/icon.ico" type="image/x-icon">
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: black;
+      overflow: hidden;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .rainbow-text {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: wave 2s infinite linear;
+      white-space: nowrap;
+    }
+  </style>
 </head>
 <body>
-    <video autoplay loop muted>
-        <source src="content/video.mp4" type="video/mp4">
-    </video>
+  <img src="content/image.png" alt="Centered Image">
+  <div class="rainbow-text">MrPearPunk is a big noob</div>
 </body>
 </html>
